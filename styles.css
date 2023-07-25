@@ -1,0 +1,344 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.site-identity {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+    vertical-align: middle;
+    /* Align the logo vertically with the navigation bar */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    background-color: #ddd;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+    /* Remove the default bullet points */
+    padding: 0;
+    /* Remove any default padding */
+    margin: 0;
+    /* Remove any default margin */
+}
+
+nav li {
+    display: inline-block;
+    /* Display the list items horizontally */
+}
+
+nav a {
+    display: block;
+    padding: 10px 20px;
+    /* Adjust the padding as per your needs */
+    text-decoration: none;
+    color: #e60d0d;
+    /* Set the color of the navigation links */
+}
+
+nav a:hover {
+    background-color: #f0cdcd;
+    /* Set the background color on hover */
+}
+
+
+/* Styling the home page section */
+
+#home {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+/* Styling the about page section */
+
+#About {
+    padding: 20px;
+}
+
+#about {
+    text-align: right;
+    /* Align the text to the right */
+}
+
+#about p {
+    font-size: 14px;
+    /* Adjust the font size as needed */
+}
+
+#services {
+    background-color: #fbfffb;
+    /* Set the background color for the services section */
+    padding: 20px;
+}
+
+#portfolio {
+    background-color: #f7f6f5;
+    /* Set the background color for the contact section */
+    padding: 20px;
+}
+
+#contact {
+    background-color: #f7f6f5;
+    /* Set the background color for the contact section */
+    padding: 20px;
+}
+
+
+/* Styling the active navigation button */
+
+#home-link {
+    font-weight: bold;
+}
+
+.site-identity {
+    float: left;
+}
+
+.site-identity img {
+    max-width: 100px;
+    float: left;
+    margin: auto;
+}
+
+.logo {
+    width: 100px;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+h1 {
+    margin: 0;
+}
+
+.main {
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 24px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.image-gallery {
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+section {
+    padding: 40px 0;
+    /* Add vertical spacing between sections */
+    border-top: 1px solid #ccc;
+    /* Add a top border to each section */
+}
+
+section:first-child {
+    border-top: none;
+    /* Remove the top border from the first section */
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.whatsapp i {
+    font-size: 24px;
+    /* Adjust the font size of the WhatsApp icon */
+    color: green;
+    /* Adjust the color of the WhatsApp icon */
+}
+
+.cv-button {
+    text-align: center;
+    margin-top: 20px;
+    /* Adjust the margin as needed */
+}
+
+.cv-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+}
+
+.cv-button a:hover {
+    background-color: #555;
+}
+
+body.dark-mode {
+    background-color: #333;
+    /* Styles for dark mode */
+    color: #fff;
+}
+
+
+/* Styles for the toggle switch */
+
+.mode-toggle {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.mode-toggle label {
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+.mode-toggle input[type="checkbox"] {
+    display: none;
+}
+
+.mode-toggle .slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.mode-toggle .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    top: 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.mode-toggle input:checked+.slider {
+    background-color: #2196F3;
+}
+
+.mode-toggle input:checked+.slider:before {
+    transform: translateX(20px);
+}
+
+
+/* Portfolio section styles */
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    /* Adjust the height as needed */
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Adjust the image positioning and scaling */
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.slide-text h3 {
+    margin: 0 0 10px;
+}
+
+.slide-text p {
+    margin: 0;
+}
