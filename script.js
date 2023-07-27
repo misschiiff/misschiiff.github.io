@@ -34,8 +34,7 @@ window.addEventListener("load", function() {
     // Show the first slide
     showSlide(currentSlide);
 
-    // Automatically rotate slides every 3 seconds (adjust as needed)
-    setInterval(autoRotateSlide, 3000);
+
 });
 const modeSwitch = document.getElementById('mode-switch');
 
@@ -52,10 +51,7 @@ window.addEventListener('DOMContentLoaded', function() {
     let currentSlide = 0;
 
     function showSlide() {
-        // Hide all slides
-        slides.forEach(function(slide) {
-            slide.classList.remove('active');
-        });
+
 
         // Show the current slide
         slides[currentSlide].classList.add('active');
