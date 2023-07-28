@@ -43,7 +43,7 @@ nav a:hover {
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -310,7 +310,7 @@ footer {
 }
 
 .cv-button {
-    text-align: center;
+    text-align: left;
     margin-top: 20px;
     /* Adjust the margin as needed */
 }
