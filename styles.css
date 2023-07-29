@@ -1,6 +1,25 @@
 @media (max-width:768px) {
+     display: block;
     /* Adjust as needed */
 }
+   /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            .responsive {
+                height: 150px;
+                 display: block;
+                /* Adjust other styles for smaller screens */
+            }
+        }
+
+        /* Media query for even smaller screens */
+        @media (max-width: 480px) {
+            .responsive {
+                height: 100px;
+                 display: block;
+                /* Adjust other styles for even smaller screens */
+            }
+        }
+
 
 header {
     display: flex;
