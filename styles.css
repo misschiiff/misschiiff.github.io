@@ -463,3 +463,25 @@ input[type=submit]:hover {
     width: 100%;
     background-size: contain;
 }
+
+
+/* Add styles to the wrapper */
+
+.wrapper {
+    max-width: 1000px;
+    /* Set a maximum width to limit the content's expansion on larger screens */
+    margin: 0 auto;
+    /* Center the wrapper horizontally */
+    padding: 20px;
+    /* Add padding to create some spacing between the content and the edges of the wrapper */
+}
+
+
+/* Add your widget styles here */
+
+.widget {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    /* Add other styling properties as needed */
+}
