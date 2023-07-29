@@ -494,3 +494,26 @@ input[type=submit]:hover {
     margin: 10px;
     padding: 20px;
 }
+
+
+/* Styles for mobile view */
+
+.card.mobile-view {
+    border: 2vw solid #ccc;
+    /* Border thickness based on viewport width */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+}
+
+
+/* Add media query for larger screens */
+
+@media screen and (min-width: 600px) {
+    .card.mobile-view {
+        border: 1px solid #ccc;
+        /* Adjust the border thickness for larger screens */
+        padding: 24px;
+        /* Adjust padding for larger screens */
+    }
+}
