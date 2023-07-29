@@ -201,6 +201,13 @@ nav a:hover {
     background-color: #fbfffb;
     /* Set the background color for the services section */
     padding: 20px;
+    .services-text-container {
+        /* Optional: Add some padding to create space between the image and text */
+        padding-top: 10px;
+        /* Adjust as needed */
+        text-align: center;
+        text-align: justify;
+    }
 }
 
 #portfolio {
@@ -441,7 +448,7 @@ input[type=submit]:hover {
 }
 
 .product-card {
-    width: calc(25% - 20px);
+    width: calc(20% - 15px);
     /* Adjust the width to create 4 cards per row */
     margin: 10px;
     padding: 20px;
