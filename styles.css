@@ -1,29 +1,37 @@
 @media (max-width:768px) {
-     display: flex;
-   margin: 10px; /* Adds space outside the */
+    display: flex;
+    margin: 10px;
+    /* Adds space outside the */
     /* Adjust as needed */
 }
-   /* Media query for smaller screens */
-        @media (max-width: 768px) {
-            .responsive {
-                height: 150px;
-                 display: flex;
-               margin: 10px; /* Adds space outside the */
-               padding:20px; /* Adds space inside the */
-                /* Adjust other styles for smaller screens */
-            }
-        }
 
-        /* Media query for even smaller screens */
-        @media (max-width: 480px) {
-            .responsive {
-                height: 100px;
-                 display: flex;
-               margin: 10px; /* Adds space outside the */
-                /* Adjust other styles for even smaller screens */
-            }
-        }
 
+/* Media query for smaller screens */
+
+@media (max-width: 768px) {
+    .responsive {
+        height: 150px;
+        display: flex;
+        margin: 10px;
+        /* Adds space outside the */
+        padding: 20px;
+        /* Adds space inside the */
+        /* Adjust other styles for smaller screens */
+    }
+}
+
+
+/* Media query for even smaller screens */
+
+@media (max-width: 480px) {
+    .responsive {
+        height: 100px;
+        display: flex;
+        margin: 10px;
+        /* Adds space outside the */
+        /* Adjust other styles for even smaller screens */
+    }
+}
 
 header {
     display: flex;
@@ -485,31 +493,6 @@ input[type=submit]:hover {
     position: relative;
     width: 100%;
     background-size: contain;
-<<<<<<< HEAD
-}
-
-
-/* Add styles to the wrapper */
-
-.wrapper {
-    max-width: 1000px;
-    /* Set a maximum width to limit the content's expansion on larger screens */
-    margin: 0 auto;
-    /* Center the wrapper horizontally */
+    margin: 10px;
     padding: 20px;
-    /* Add padding to create some spacing between the content and the edges of the wrapper */
-}
-
-
-/* Add your widget styles here */
-
-.widget {
-    width: 100px;
-    height: 100px;
-    background-color: #f0f0f0;
-    /* Add other styling properties as needed */
-=======
-   margin:10px;
-   padding:20px;
->>>>>>> 3a7212a9aae44433d30fe2005602c8d39f6ecd65
 }
