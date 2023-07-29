@@ -1,3 +1,7 @@
+@media (max-width:768px) {
+    /* Adjust as needed */
+}
+
 header {
     display: flex;
     align-items: center;
