@@ -1,5 +1,6 @@
 @media (max-width:768px) {
      display: block;
+   margin: 10px; /* Adds space outside the
     /* Adjust as needed */
 }
    /* Media query for smaller screens */
@@ -7,6 +8,7 @@
             .responsive {
                 height: 150px;
                  display: block;
+               margin: 10px; /* Adds space outside the
                 /* Adjust other styles for smaller screens */
             }
         }
@@ -16,6 +18,7 @@
             .responsive {
                 height: 100px;
                  display: block;
+               margin: 10px; /* Adds space outside the
                 /* Adjust other styles for even smaller screens */
             }
         }
