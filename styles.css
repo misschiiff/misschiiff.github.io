@@ -1,6 +1,4 @@
 @media (max-width:768px) {
-    display: flex;
-    margin: 10px;
     /* Adds space outside the */
     /* Adjust as needed */
 }
@@ -11,7 +9,7 @@
 @media (max-width: 768px) {
     .responsive {
         height: 150px;
-        display: flex;
+        display: grid;
         margin: 10px;
         /* Adds space outside the */
         padding: 20px;
@@ -26,7 +24,7 @@
 @media (max-width: 480px) {
     .responsive {
         height: 100px;
-        display: flex;
+        display: grid;
         margin: 10px;
         /* Adds space outside the */
         /* Adjust other styles for even smaller screens */
