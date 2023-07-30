@@ -8,6 +8,8 @@
     <meta name="keywords" content="Design, porfolio, Digital Art" />
     <meta name="keywords" content="Design, Bridget Designs, portfolio" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <meta name="author" content="BRIDGET IZBA" />
     <title>Bridget Designs | Software engineer</title>
     <link rel="stylesheet" href="styles.css">
@@ -24,19 +26,19 @@
                     </div>
                     <nav>
                         <ul>
-                            <li><a href="#Services ">Services</a></li>
-                            <li><a href="#Portfolio ">Portfolio</a></li>
-                            <li><a href="#About ">About me</a></li>
-                            <li><a href="#Contact ">Contact</a></li>
+                            <li><a href="#Services">Services</a></li>
+                            <li><a href="#Portfolio">Portfolio</a></li>
+                            <li><a href="#About">About me</a></li>
+                            <li><a href="#Contact">Contact</a></li>
 
                         </ul>
                     </nav>
 
                 </header>
 
-
+                <!-- home pace/services page content goes here -->
                 <section class="hero " id="Services ">
-                    <a href="#Services "><img src="https://i.ibb.co/2N9wvDC/0-E7-CB51-E-6015-44-AA-8222-B64-E89368-F4-B.png " alt="3d-character " width="300 " height="300 " align="center "></a>
+                    <a href="#Services"><img src="https://i.ibb.co/2N9wvDC/0-E7-CB51-E-6015-44-AA-8222-B64-E89368-F4-B.png " alt="3d-character " width="300 " height="300 " align="center "></a>
                     <div class="services-text-container "></div>
                     <h2>Design & Web Development<br>that drives results</h2>
                     <p>Nigerian Based Web developer & Graphic Designer,<span class="color ">Working</span> With Startups &
@@ -81,137 +83,153 @@
                     </div>
                 </div>
 
-
+                <!-- main page content goes here -->
                 <main>
                     <section class=" " id="contact ">
                         <h1>Services Catalog</h1>
                         <p>Explore my wide range of services tailored for you.</p>
-                        <div class="product-grid ">
-                            <!-- Product cards go here -->
-                            <div class="product-card ">
-                                <!-- Product details -->
-                                <img src="https://i.ibb.co/192bRqG/technical.png " alt="app-development " width="50 " height="50 ">
-                                <h2>Tecnical writing</h2>
-                                <p>8000 words Per page package.</p>
-                                <p>Price: $30.99</p>
-                                <a href="payment-page.html " class="button ">Add to Cart</a>
-                            </div>
-                            <div class="product-card ">
-                                <!-- Product details -->
-                                <img src=" https://i.ibb.co/KFCVYFd/app-development.png " alt="app-development " width="100 " height="100 ">
-                                <h2>Web Development</h2>
-                                <p>Complete web development package.</p>
-                                <p>Price: $400.99</p>
-                                <a href="payment-page.html " class="button ">Add to Cart</a>
-                            </div>
-                            <div class="product-card ">
-                                <!-- Product details -->
-                                <img src="https://i.ibb.co/hgyjNgB/graphic-designer.png " alt="graphic-designer " width="50 " height="50 ">
-                                <h2>Graphics Design</h2>
-                                <p>Flyer, Banner, poster,social media designs montly package.</p>
-                                <p>Price: $99.99</p>
-                                <a href="payment-page.html " class="button ">Add to Cart</a>
-                            </div>
-                            <div class="product-card ">
-                                <!-- Product details -->
-                                <img src="https://i.ibb.co/D9Pfr8L/branding.png " alt="branding " width="100 " height="100 ">
-                                <h2>Brand Design</h2>
-                                <p>Complete brand design package.</p>
-                                <p>Price: $40.99</p>
-                                <a href="payment-page.html " class="button ">Add to Cart</a>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+
+                                    <div class="product-grid">
+                                        <!-- Product cards go here -->
+                                        <button class="prev-button">&#10094;</button>
+                                        <div class="product-card ">
+                                            <!-- Product details -->
+                                            <img src="https://i.ibb.co/192bRqG/technical.png " alt="app-development " width="50 " height="50 ">
+                                            <h2>Tecnical writing</h2>
+                                            <p>8000 words Per page package.</p>
+                                            <p>Price: $30.99</p>
+                                            <a href="payment-page.html " class="button ">Add to Cart</a>
+                                        </div>
+                                        <div class="product-card ">
+                                            <!-- Product details -->
+                                            <img src=" https://i.ibb.co/KFCVYFd/app-development.png " alt="app-development " width="50 " height="50 ">
+                                            <h2>Web Development</h2>
+                                            <p>Complete web development package.</p>
+                                            <p>Price: $400.99</p>
+                                            <a href="payment-page.html " class="button ">Add to Cart</a>
+                                        </div>
+                                        <div class="product-card ">
+                                            <!-- Product details -->
+                                            <img src="https://i.ibb.co/hgyjNgB/graphic-designer.png " alt="graphic-designer " width="50 " height="50 ">
+                                            <h2>Graphics Design</h2>
+                                            <p>Flyer, Banner, poster,social media designs montly package.</p>
+                                            <p>Price: $99.99</p>
+                                            <a href="payment-page.html " class="button ">Add to Cart</a>
+                                        </div>
+                                        <div class="product-card ">
+                                            <!-- Product details -->
+                                            <img src="https://i.ibb.co/D9Pfr8L/branding.png " alt="branding " width="50 " height="50 ">
+                                            <h2>Brand Design</h2>
+                                            <p>Complete brand design package.</p>
+                                            <p>Price: $40.99</p>
+                                            <a href="payment-page.html " class="button ">Add to Cart</a>
+                                        </div>
+                                    </div>
+
+                                    <button class="next-button">&#10095;</button>
+                                </div>
                             </div>
                         </div>
 
-                    </section>
 
-                    <section class="hero " id="portfolio ">
-                        <h1>My Portfolio</h1>
-                        <div class="scroll-container ">
-                            <img src="https://i.ibb.co/DfGF4Kz/IMG-2334.png " alt="Cinque Terre " width="600 " height="400 ">
-                            <img src="https://i.ibb.co/FHmDghM/IMG-2335.png " alt="Forest " width="600 " height="400 ">
-                            <img src="https://i.ibb.co/BB8K03g/IMG-2336.png " alt="Northern Lights " width="600 " height="400 ">
-                        </div>
-
-
-
-
-                    </section>
+            </div>
+            </section>
+            <!-- recent work porfolio -->
+            <section class="hero " id="portfolio ">
+                <h2>My Work Gallery</h2>
+                <p>Recent Projects</p>
+                <div class="scroll-container ">
+                    <img src="https://i.ibb.co/DfGF4Kz/IMG-2334.png " alt="Cinque Terre " width="600 " height="400 ">
+                    <img src="https://i.ibb.co/FHmDghM/IMG-2335.png " alt="Forest " width="600 " height="400 ">
+                    <img src="https://i.ibb.co/BB8K03g/IMG-2336.png " alt="Northern Lights " width="600 " height="400 ">
+                </div>
 
 
 
 
+            </section>
 
-                    <div class="cv-button ">
 
-                        <a href="BRIDGET 's Resume (1).pdf" download>
+
+
+
+            <div class="cv-button ">
+
+                <a href="BRIDGET 's Resume (1).pdf" download>
                   Download CV<i class="uil uil-download-alt button__icon"></i>
                 </a>
-                    </div>
-                    </section>
-
-                    <section class="hero " id="About">
-                        <h2>About Me</h2>
-                        <div class="image-container ">
-                            <img src="https://i.ibb.co/J3qYd2P/IMG-2070-1.jpg " alt="about-image" />
-                            <div class="about-text-container">
-                                <h1>BRIDGET IZBA</h1>
-                                <p>With a stellar track record spanning over 4+ years, I am your go-to expert for crafting professional and captivating websites tailored to businesses, brands, and individuals. My passion for design and development is matched
-                                    only by my proficiency in SEO techniques, ensuring your online presence not only looks stunning but also attracts and engages your target audience. Why choose me for your next project? The answer is simple - quality
-                                    and excellence in delivery are at the core of everything I do. Your vision is my mission, and I am committed to bringing it to life with meticulous attention to detail and a deep understanding of your unique requirements.
-                                    Whether you need a brand design, graphic designs, web design or a sleek corporate website, an eye-catching e-commerce platform, or a personal portfolio that stands out from the crowd, I have the skills and creativity
-                                    to make it happen.
-                                </p>
-                            </div>
-
-                        </div>
-                        <p>Explore my wide range of services tailored for you.</p>
-                        <a href="#portfolio" class="button ">Learn More</a>
-                    </section>
-                </main>
-                <form action="/action_page.php">
-                    <div class="container">
-                        <h2>Subscribe to My Newsletter</h2>
-                        <p>Stay up to date on all things design and development. Get updates and latest news and annoucements from Bridget Designs</p>
+            </div>
+            </section>
+            <!-- about section content -->
+            <section class="hero " id="About">
+                <h2>About Me</h2>
+                <p>Get to know me</p>
+                <div class="image-container ">
+                    <img src="https://i.ibb.co/J3qYd2P/IMG-2070-1.jpg " alt="about-image" />
+                    <div class="about-text-container">
+                        <h1>BRIDGET IZBA</h1>
+                        <p>With a stellar track record spanning over 4+ years, I am your go-to expert for crafting professional and captivating websites tailored to businesses, brands, and individuals. My passion for design and development is matched only
+                            by my proficiency in SEO techniques, ensuring your online presence not only looks stunning but also attracts and engages your target audience. Why choose me for your next project? The answer is simple - quality and excellence
+                            in delivery are at the core of everything I do. Your vision is my mission, and I am committed to bringing it to life with meticulous attention to detail and a deep understanding of your unique requirements. Whether you need
+                            a brand design, graphic designs, web design or a sleek corporate website, an eye-catching e-commerce platform, or a personal portfolio that stands out from the crowd, I have the skills and creativity to make it happen.
+                        </p>
                     </div>
 
-                    <div class="container" style="background-color:white">
-                        <input type="text" placeholder="Name" name="name" required>
-                        <input type="text" placeholder="Email address" name="mail" required>
-                        <label>
+                </div>
+                <p>Explore my wide range of services tailored for you.</p>
+                <a href="#portfolio" class="button ">Learn More</a>
+            </section>
+            </main>
+            <!-- news letter -->
+            <form action="/action_page.php">
+                <div class="container">
+                    <h2>Subscribe to My Newsletter</h2>
+                    <p>Stay up to date on all things design and development. Get updates and latest news and annoucements from Bridget Designs</p>
+                </div>
+
+                <div class="container" style="background-color:white">
+                    <input type="text" placeholder="Name" name="name" required>
+                    <input type="text" placeholder="Email address" name="mail" required>
+                    <label>
             <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
           </label>
-                    </div>
+                </div>
 
-                    <div class="container">
-                        <input type="submit" value="Subscribe">
-                    </div>
-                </form>
-                <footer id="contact ">
-                    <a href="# "><i class="fa fa-facebook-official "></i></a>
-                    <a href="https://www.behance.net/Bridget_Designs "><i class="fa fa-behance "></i></a>
-                    <a href="Https://www.Twitter.com/66dxns "><i class="fa fa-twitter "></i></a>
-                    <a href="Https://www.Instagram.com/66dxns "><i class="fa fa-instagram "></i></a>
-                    <a href="Https://www.github.com/misschiiff "><i class="fa fa-github "></i></a>
-                    <a href="https://www.linkedin.com/in/bridget-izba-767b9a229 "><i class="fa fa-linkedin "></i></a>
-                    <a href="https://wa.me/message/BZ2WIPSMDAJFL1 "><i class="fab fa-whatsapp"></i></a>
-                    <p>&copy; 2023 Bridget Designs. All rights reserved.</p>
+                <div class="container">
+                    <input type="submit" value="Subscribe">
+                </div>
+            </form>
+            <!-- footer content here -->
+            <footer id="contact ">
+                <a href="# "><i class="fa fa-facebook-official "></i></a>
+                <a href="https://www.behance.net/Bridget_Designs "><i class="fa fa-behance "></i></a>
+                <a href="Https://www.Twitter.com/66dxns "><i class="fa fa-twitter "></i></a>
+                <a href="Https://www.Instagram.com/66dxns "><i class="fa fa-instagram "></i></a>
+                <a href="Https://www.github.com/misschiiff "><i class="fa fa-github "></i></a>
+                <a href="https://www.linkedin.com/in/bridget-izba-767b9a229 "><i class="fa fa-linkedin "></i></a>
+                <a href="https://wa.me/message/BZ2WIPSMDAJFL1 "><i class="fab fa-whatsapp"></i></a>
+                <p>&copy; 2023 Bridget Designs. All rights reserved.</p>
 
+                <!-- mode toggle switch -->
+                <div class="mode-toggle">
+                    <label for="mode-switch">Click text to switch mode:</label>
+                    <input type="checkbox" id="mode-switch" />
+                    <span class="slider round"></span>
+                </div>
+            </footer>
+            <!-- Javascript code goes here -->
 
-                    <div class="mode-toggle">
-                        <label for="mode-switch">Click text to switch mode:</label>
-                        <input type="checkbox" id="mode-switch" />
-                        <span class="slider round"></span>
-                    </div>
-                </footer>
-
-
-                <script src="script.js" defer></script>
-            </div>
-
+            <script src="script.js" defer></script>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         </div>
+
+    </div>
     </div>
 </body>
 
-</html>
+
 
 </html>

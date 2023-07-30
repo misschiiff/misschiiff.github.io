@@ -71,3 +71,67 @@ window.addEventListener('DOMContentLoaded', function() {
     // Automatically rotate slides every 3 seconds (adjust as needed)
     setInterval(nextSlide, 3000);
 });
+
+
+
+$(document).ready(function() {
+    const itemWidth = $(".product-grid").outerWidth();
+    const itemCount = $(".product-grid .card").length;
+    let currentIndex = 0;
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    $(".next-button").on("click", function() {
+        currentIndex = (currentIndex + 1) % itemCount;
+        const offset = currentIndex * itemWidth;
+        $(".product-grid").css("transform", `translateX(-${offset}px)`);
+    });
+
+    $(".prev-button").on("click", function() {
+        currentIndex = (currentIndex - 1 + itemCount) % itemCount;
+        const offset = currentIndex * itemWidth;
+        $(".product-grid").css("transform", `translateX(-${offset}px)`);
+    });
+
+    $(".product-grid").on("touchstart", function(e) {
+        touchStartX = e.touches[0].clientX;
+    });
+
+    $(".product-grid").on("touchmove", function(e) {
+        touchEndX = e.touches[0].clientX;
+    });
+
+    $(".product-grid").on("touchend", function() {
+        if (touchEndX < touchStartX) {
+            // Swiped left, move to the next card
+            currentIndex = (currentIndex + 1) % itemCount;
+        } else if (touchEndX > touchStartX) {
+            // Swiped right, move to the previous card
+            currentIndex = (currentIndex - 1 + itemCount) % itemCount;
+        }
+        const offset = currentIndex * itemWidth;
+        $(".product-grid").css("transform", `translateX(-${offset}px)`);
+    });
+});
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+});
