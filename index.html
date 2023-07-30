@@ -249,10 +249,7 @@
                 <span class="slider round"></span>
             </div>
         </footer>
-        <!-- Javascript code goes here -->
 
-        <script src="script.js" defer></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
 
@@ -260,6 +257,10 @@
 
     </div>
     </div>
+    <!-- Javascript code goes here -->
+
+    <script src="script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper', {
             // Swiper options and configuration here
@@ -279,8 +280,17 @@
         });
     </script>
 
+    <script>
+        // Initialize the swiper with the desired options
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1, // Show only one slide at a time
+            spaceBetween: 20, // Adjust the spacing between slides as needed
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
-
-
 
 </html>

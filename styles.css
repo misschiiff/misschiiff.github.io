@@ -605,5 +605,6 @@ input[type=submit]:hover {
 
 .swiper-slide {
     display: flex;
-    justify-content: horizontal;
+    justify-content: center;
+    align-items: center;
 }
