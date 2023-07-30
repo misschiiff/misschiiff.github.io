@@ -9,7 +9,6 @@
 @media (max-width: 768px) {
     .responsive {
         height: 150px;
-        display: grid;
         margin: 10px;
         /* Adds space outside the */
         padding: 20px;
@@ -24,7 +23,6 @@
 @media (max-width: 480px) {
     .responsive {
         height: 100px;
-        display: grid;
         margin: 10px;
         /* Adds space outside the */
         /* Adjust other styles for even smaller screens */
@@ -476,18 +474,45 @@ input[type=submit]:hover {
     justify-content: space-between;
 }
 
+
+/* Default card size and spacing for larger screens - two cards per row */
+
+
+/* adjust to 20% - 15% width to  create 4 cardsper row*/
+
 .product-card {
     width: calc(20% - 15px);
-    /* Adjust the width to create 4 cards per row */
+    /* Adjust the width to create 2 cards per row */
     margin: 10px;
-    padding: 20px;
+    padding: 25px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    overflow: visible;
 }
+
+
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+    .product-card {
+        /* Adjust card size for smaller screens */
+        width: calc(33.33% - 15px);
+    }
+}
+
+@media (max-width: 576px) {
+    .product-card {
+        /* Adjust card size for even smaller screens */
+        width: calc(50% - 10px);
+    }
+}
+
+
+/* Media query for responsiveness - one card per row for smaller screens */
 
 #responsive {
     display: inline-block;
@@ -533,6 +558,7 @@ input[type=submit]:hover {
 .product-grid {
     display: flex;
     transition: transform 0.3s ease;
+    overflow: visible;
 }
 
 .prev-button,
@@ -547,11 +573,20 @@ input[type=submit]:hover {
     cursor: pointer;
 }
 
+.prev-button {
+    left: 0;
+}
+
 .next-button {
     right: 0;
 }
 
 .swiper {
-    width: 600px;
+    width: 100%;
     height: 300px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
 }
