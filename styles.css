@@ -353,14 +353,16 @@ footer {
     text-align: left;
     margin-top: 20px;
     /* Adjust the margin as needed */
+    justify-items: center;
 }
 
 .cv-button a {
-    display: inline-block;
+    display: flex;
     padding: 10px 20px;
     background-color: #333;
     color: #fff;
     text-decoration: none;
+    justify-items: center;
 }
 
 .cv-button a:hover {
