@@ -114,24 +114,15 @@ $(document).ready(function() {
     });
 });
 
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
 
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-    },
 
-    // Navigation arrows
+javascript
+// Initialize the swiper with the desired options
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1, // Show only one slide at a time
+    spaceBetween: 20, // Adjust the spacing between slides as needed
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
     },
 });

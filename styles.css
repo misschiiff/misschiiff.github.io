@@ -608,3 +608,16 @@ input[type=submit]:hover {
     justify-content: center;
     align-items: center;
 }
+
+
+/* Additional styles for the swiper container */
+
+.swiper-container {
+    width: 100%;
+    max-width: 800px;
+    /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    /* Center the swiper container horizontally */
+    overflow: hidden;
+    /* Hide overflowing content (hide other slides) */
+}

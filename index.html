@@ -213,6 +213,7 @@
         </section>
         </main>
         <!-- news letter -->
+        <div id="custom-substack-embed"></div>
         <form action="/action_page.php">
             <div class="container">
                 <h2>Subscribe to My Newsletter</h2>
@@ -260,6 +261,16 @@
     <!-- Javascript code goes here -->
 
     <script src="script.js" defer></script>
+
+    <script>
+        window.CustomSubstackWidget = {
+            substackUrl: "Bridgetdsgn.substack.com",
+            placeholder: "example@gmail.com",
+            buttonText: "Subscribe",
+            theme: "green"
+        };
+    </script>
+    <script src="https://substackapi.com/widget.js" async></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper', {
@@ -268,16 +279,6 @@
         });
     </script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var swiper = new Swiper('.swiper', {
-                slidesPerView: 4,
-                spaceBetween: 20,
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
-        });
     </script>
 
     <script>
