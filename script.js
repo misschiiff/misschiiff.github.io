@@ -93,10 +93,6 @@ $(document).ready(function() {
         $(".product-grid").css("transform", `translateX(-${offset}px)`);
     });
 
-    $(".product-grid").on("touchstart", function(e) {
-        touchStartX = e.touches[0].clientX;
-    });
-
     $(".product-grid").on("touchmove", function(e) {
         touchEndX = e.touches[0].clientX;
     });
@@ -112,17 +108,4 @@ $(document).ready(function() {
         const offset = currentIndex * itemWidth;
         $(".product-grid").css("transform", `translateX(-${offset}px)`);
     });
-});
-
-
-
-javascript
-// Initialize the swiper with the desired options
-var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1, // Show only one slide at a time
-    spaceBetween: 20, // Adjust the spacing between slides as needed
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
 });
