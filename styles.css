@@ -141,6 +141,7 @@ nav a:hover {
 
 .row {
     margin: 0 -5px;
+    justify-content: center;
 }
 
 
@@ -150,6 +151,7 @@ nav a:hover {
     content: "";
     display: table;
     clear: both;
+    justify-content: center;
 }
 
 
@@ -473,9 +475,6 @@ input[type=submit]:hover {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
-
-/* Default card size and spacing for larger screens - two cards per row */
 
 
 /* adjust to 20% - 15% width to  create 4 cardsper row*/
