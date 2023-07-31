@@ -1,132 +1,189 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>My Cart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="keywords" content="Design, porfolio, Digital Art" />
+    <meta name="keywords" content="Design, Bridget Designs, portfolio" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10.0.4/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10.0.4/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta name="author" content="BRIDGET IZBA" />
+    <title>Bridget Designs | Software engineer</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-        
-        .products {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        
-        .product-card {
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 10px;
-            margin: 10px;
-            width: 200px;
-        }
-        
-        .cart {
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 10px;
-            margin-top: 20px;
-        }
-    </style>
 </head>
 
 <body>
-    <h1>Product Catalog</h1>
-    <div class="products">
-        <!-- Product cards go here -->
-        <div class="product-card ">
-            <!-- Product details -->
-            <img src="https://i.ibb.co/192bRqG/technical.png " alt="app-development " width="20 " height="20 ">
-            <h2>Tecnical writing</h2>
-            <p>8000 words Per page package.</p>
-            <p>Price: $30.99</p>
-            <a href="payment-page.html " class="button ">Add to Cart</a>
+    <div class="card mobile-view">
+        <div class=" wrapper ">
+
+            <div id="responsive ">
+                <header>
+                    <div class="site-identity ">
+                        <a href="index.html" class="logo "><img src="https://i.ibb.co/6mtKMzq/IMG-1686-1.png " alt="IMG-1686-1 "></a>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="Services.html">Services</a></li>
+                            <li><a href="Portfolio.html">Portfolio</a></li>
+                            <li><a href="About.html">About me</a></li>
+                            <li><a href="Contact.html">Contact</a></li>
+
+                        </ul>
+                    </nav>
+
+                </header>
+
+
+
+                <!-- main page content goes here -->
+                <main>
+
+
+
+                    <div class="swiper-slide">
+                        <div class="product-grid">
+                            <div class="product-card ">
+                                <!-- Product details -->
+                                <img src=" https://i.ibb.co/KFCVYFd/app-development.png " alt="app-development " width="20 " height="20 ">
+                                <h2>Web Development</h2>
+                                <p>Complete web development package.</p>
+                                <p>Price: $400.99</p>
+                                <a href="payment-page.html " class="button ">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="product-grid">
+                            <div class="product-card ">
+                                <!-- Product details -->
+                                <img src="https://i.ibb.co/hgyjNgB/graphic-designer.png " alt="graphic-designer " width="20 " height="20 ">
+                                <h2>Graphics Design</h2>
+                                <p>Flyer, Banner, poster,social media designs montly package.</p>
+                                <p>Price: $99.99</p>
+                                <a href="payment-page.html " class="button ">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="product-grid">
+                            <div class="product-card ">
+                                <!-- Product details -->
+                                <img src="https://i.ibb.co/D9Pfr8L/branding.png " alt="branding " width="20 " height="20 ">
+                                <h2>Brand Design</h2>
+                                <p>Complete brand design package.</p>
+                                <p>Price: $40.99</p>
+                                <a href="payment-page.html " class="button ">Add to Cart</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+            </div>
+            <!-- Swiper Navigation Buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
         </div>
+        </section>
+        <p>Swipe</p>
     </div>
-    <h2>Cart</h2>
-    <div class="cart">
-        <!-- Cart items go here -->
-        <li>Product 1 (Quantity: 4) - $20</li>
-        <li>Product 2 (Quantity: 3) - $20</li>
-        <li>Product 2 (Quantity: 2) - $20</li>
-        <li>Product 2 (Quantity: 1) - $20</li>
+
+
     </div>
-    <script src="script.js"></script>
+
+    </section>
+
+
+    </main>
+    <!-- news letter -->
+    <form action="/action_page.php">
+        <div class="container">
+            <h2>Subscribe to My Newsletter</h2>
+            <p>Stay up to date on all things design and development. Get updates and latest news and annoucements from Bridget Designs</p>
+        </div>
+        <section>
+            <div id="custom-substack-embed"></div>
+        </section>
+
+    </form>
+    <!-- footer content here -->
+    <footer id="contact ">
+
+        <a href="https://www.behance.net/Bridget_Designs "><i class="fa fa-behance "></i></a>
+        <a href="Https://www.Twitter.com/66dxns "><i class="fa fa-twitter "></i></a>
+        <a href="Https://www.Instagram.com/66dxns "><i class="fa fa-instagram "></i></a>
+        <a href="Https://www.github.com/misschiiff "><i class="fa fa-github "></i></a>
+        <a href="https://www.linkedin.com/in/bridget-izba-767b9a229 "><i class="fa fa-linkedin "></i></a>
+
+        <p>&copy; 2023 Bridget Designs. All rights reserved.</p>
+
+        <!-- mode toggle switch -->
+        <div class="mode-toggle">
+            <label for="mode-switch">Click text to switch mode:</label>
+            <input type="checkbox" id="mode-switch" />
+            <span class="slider round"></span>
+        </div>
+    </footer>
+
+
+
+
+    </div>
+
+    </div>
+    </div>
+    <!-- Javascript code goes here -->
+
+    <script src="script.js" defer></script>
+
+
     <script>
-        //  product data
-        const products = [{
-            id: 1,
-            name: 'Product 1',
-            price: 10
-        }, {
-            id: 2,
-            name: 'Product 2',
-            price: 20
-        }, {
-            id: 3,
-            name: 'Product 3',
-            price: 15
-        }, ];
-
-        // event listener when the page loads
-        document.addEventListener('DOMContentLoaded', () => {
-            displayProducts();
-        });
-
-        //to display products on the page
-        function displayProducts() {
-            const productsContainer = document.getElementById('product-list');
-            productsContainer.innerHTML = '';
-
-            products.forEach((product) => {
-                const productCard = document.createElement('div');
-                productCard.classList.add('product-card');
-                productCard.innerHTML = `
-              <h3>${product.name}</h3>
-              <p>Price: $${product.price}</p>
-              <button onclick="addToCart(${product.id})">Add to Cart</button>
-            `;
-                productsContainer.appendChild(productCard);
-            });
-        }
-
-        // Shopping cart array to store added items
-        const cart = [];
-
-        // Function to add products to the cart
-        function addToCart(productId) {
-            const productToAdd = products.find((product) => product.id === productId);
-
-            if (productToAdd) {
-                const existingCartItem = cart.find((item) => item.id === productId);
-
-                if (existingCartItem) {
-                    existingCartItem.quantity++;
-                } else {
-                    cart.push({...productToAdd,
-                        quantity: 1
-                    });
-                }
-
-                displayCartItems();
+        window.CustomSubstackWidget = {
+            substackUrl: "Bridgetdsgn.substack.com",
+            placeholder: "example@gmail.com",
+            buttonText: "Subscribe",
+            theme: "custom",
+            colors: {
+                primary: "dd1914",
+                input: "#000000",
+                email: "#dd1914",
+                text: "#000000",
             }
-        }
+        };
+    </script>
+    <script src="https://substackapi.com/widget.js" async></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper', {
+            // Swiper options and configuration here
+            // Example: direction: 'horizontal', loop: true, etc.
+        });
+    </script>
+    <script>
+    </script>
 
-        // Function to display cart items on the page
-        function displayCartItems() {
-            const cartContainer = document.getElementById('cart-items');
-            cartContainer.innerHTML = '';
-
-            cart.forEach((item) => {
-                const cartItem = document.createElement('div');
-                cartItem.innerHTML = `
-              <p>${item.name} (Quantity: ${item.quantity}) - $${item.price * item.quantity}</p>
-            `;
-                cartContainer.appendChild(cartItem);
-            });
-        }
+    <script>
+        // Initialize the swiper with the desired options
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1, // Show only one slide at a time
+            spaceBetween: 20, // Adjust the spacing between slides as needed
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
     </script>
 </body>
 
