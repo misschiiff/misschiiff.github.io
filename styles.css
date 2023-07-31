@@ -576,6 +576,7 @@ input[type=submit]:hover {
     display: flex;
     transition: transform 0.3s ease;
     overflow: visible;
+    justify-content: center;
 }
 
 .prev-button,
@@ -596,6 +597,13 @@ input[type=submit]:hover {
 
 .next-button {
     right: 0;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Center the product cards horizontally */
 }
 
 .swiper {
@@ -620,6 +628,7 @@ input[type=submit]:hover {
     /* Center the swiper container horizontally */
     overflow: hidden;
     /* Hide overflowing content (hide other slides) */
+    justify-content: center;
 }
 
 .custom-substack-embed {
