@@ -341,22 +341,15 @@ footer {
     font-size: 14px;
 }
 
-.whatsapp i {
-    font-size: 24px;
-    /* Adjust the font size of the WhatsApp icon */
-    color: green;
-    /* Adjust the color of the WhatsApp icon */
-}
-
 .cv-button {
-    text-align: left;
+    text-align: center;
     margin-top: 20px;
     /* Adjust the margin as needed */
     justify-items: center;
 }
 
 .cv-button a {
-    display: flex;
+    display: inline-block;
     padding: 10px 20px;
     background-color: #333;
     color: #fff;
@@ -373,6 +366,24 @@ body.dark-mode {
     /* Styles for dark mode */
     color: #fff;
 }
+
+
+/* CSS */
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.services-text-container {
+    margin-top: 20px;
+}
+
+
+/* Adjust the margin value as needed to properly position the text below the image */
 
 
 /* Styles for the toggle switch */
