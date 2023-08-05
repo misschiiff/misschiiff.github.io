@@ -36,6 +36,34 @@ header {
     padding: 10px;
 }
 
+
+/* Set the gradient background for the header */
+
+header {
+    background-image: linear-gradient(to right, #ff0000, #990000);
+    /* Replace #ff0000 and #990000 with your desired colors for the gradient */
+    padding: 20px;
+    text-align: right;
+    color: #fff;
+}
+
+
+/* Add any other styles you want for the header */
+
+
+/* Set the logo color to white */
+
+.site-identity img {
+    max-width: 100px;
+    float: left;
+    margin: auto;
+    filter: invert(1);
+    /* This inverts the logo color to white */
+}
+
+
+/* Add any other styles you want for the logo */
+
 .site-identity {
     display: flex;
     align-items: center;
@@ -102,13 +130,55 @@ nav a {
     padding: 10px 20px;
     /* Adjust the padding as per your needs */
     text-decoration: none;
-    color: #e60d0d;
+    color: #f8f4f4;
     /* Set the color of the navigation links */
 }
 
 nav a:hover {
     background-color: #f0cdcd;
     /* Set the background color on hover */
+}
+
+
+/* Aditional Styles for text color */
+
+
+/* Change the color of all text elements to black */
+
+body {
+    color: #000;
+}
+
+
+/* Change the color of specific elements with class "color" to the desired color */
+
+.span {
+    color: red;
+}
+
+.span p {
+    color: red;
+}
+
+
+/* Change the color of the navigation links on hover */
+
+nav a:hover {
+    color: black;
+}
+
+
+/* Change the color of the button text */
+
+.button {
+    color: black;
+}
+
+
+/* Change the color of the active navigation button */
+
+#home-link {
+    color: black;
 }
 
 
@@ -174,7 +244,8 @@ nav a:hover {
     padding: 16px;
     text-align: center;
     background-color: #ffffff;
-    color: #f20909;
+    color: #0d0c0c;
+    text-justify: auto;
 }
 
 
@@ -335,11 +406,25 @@ section:first-child {
 }
 
 footer {
-    background-color: #f2f2f2;
     padding: 20px;
     text-align: center;
     font-size: 14px;
 }
+
+
+/* Set the gradient background for the footer */
+
+footer {
+    background-image: linear-gradient(to right, #ff0000, #990000);
+    /* Replace #ff0000 and #990000 with your desired colors for the gradient */
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+
+/* Add any other styles you want for the footer */
 
 .cv-button {
     text-align: center;
@@ -646,4 +731,8 @@ input[type=submit]:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.blog-text-container {
+    text-align: justify;
 }
