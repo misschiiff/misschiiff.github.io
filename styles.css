@@ -151,12 +151,16 @@ body {
 
 /* Change the color of specific elements with class "color" to the desired color */
 
-.span {
+.card span h2 {
     color: red;
 }
 
 .span p {
     color: red;
+}
+
+.hero h2 {
+    color: rgb(10, 223, 81);
 }
 
 
@@ -375,8 +379,8 @@ h1 {
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #00ff0d;
+    color: #0b0b0b;
     text-decoration: none;
     border-radius: 4px;
     font-size: 16px;
