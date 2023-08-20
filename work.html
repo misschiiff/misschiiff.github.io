@@ -9,7 +9,9 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito|Poppins" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Prosto+One" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
-    <link rel="Websiteicon" type="png" href="https://i.ibb.co/q0Bytjj/IMG-2987.png">
+    <link rel="Websiteicon" type="png" href="https://i.ibb.co/N75RWZc/IMG-3273.png">
+    <script src="index.js"></script>
+    <link href="flickity.css" rel="stylesheet">
 </head>
 
 <body>
@@ -25,96 +27,118 @@
 
         <div class="nav">
             <ul>
-                <a href="index.html ">
-                    <li>Home</li>
+                <a href="index.html">
+                    <li>
+                        Home</li>
                 </a>
                 <a href="work.html ">
-                    <li>Work</li>
+                    <li>
+                        Work</li>
                 </a>
                 <a href="about.html ">
-                    <li>About</li>
+                    <li>
+                        About</li>
                 </a>
-                <a href="contact.html">
-                    <li>Contact</li>
+                <a href="about.html ">
+                    <li>
+                        Contact</li>
                 </a>
             </ul>
         </div>
     </nav>
-    <section id="hero">
-        <div class="hero-content">
+    <section id="shero">
+        <div class="shero-content">
+            <img src="https://i.ibb.co/CmKwpb7/flame-success.gif">
             <h1>Want to work with me?</h1>
-            <h4>For Your Web & App development services</h4>
-            <a href="https://wa.me/message/BZ2WIPSMDAJFL1">Reach Me</a>
-        </div>
-        <div class="overlay "></div>
-    </section>
-
-
-    <div class="info ">
-        <h1></h1>
-    </div>
-
-    <!-- <div class="info ">
-        <h1>Navigation bar with css Flexbox</h1>
-      </div> -->
-
-    <section id="hero">
-        <div class="hero-content">
-            <h1>check this out</h1>
-            <h4>Recent website projects</h4>
-            <img href="">
+            <h4>Fantastic! Lets get talking!</h4>
+            <a href="https://wa.me/message/BZ2WIPSMDAJFL1">Contact Me</a>
         </div>
         <div class="overlay"></div>
     </section>
 
+    <!-- <div class="info">
+        <h1>Navigation bar with css Flexbox</h1>
+      </div> -->
 
-    <!-- Footer content would go here. -->
+    <div id="sliderSettings">
+        <h1>Check this out!</h1>
+        <h4>my past and recent works</h4>
+        <div id="pSlider">
+            <ol id="slider-container" dir="ltr">
+                <li id="slide_1" class="li_slide">
+                    <div class="slide-snapper"></div>
+                    <a class="prev_slide" href="#slide_4"></a>
+                    <a class="next_slide" href="#slide_2"></a>
+                </li>
+                <li id="slide_2" class="li_slide">
+                    <div class="slide-snapper"></div>
+                    <a class="prev_slide" href="#slide_1"></a>
+                    <a class="next_slide" href="#slide_3"></a>
+                </li>
+                <li id="slide_3" class="li_slide">
 
-    <footer class="footer-distributed ">
-
-        <div class="footer-left ">
-            <img src="https://i.ibb.co/m4TKYRY/IMG-2988.png">
-            <h3>About<span>Bridget</span></h3>
-
-            <p class="footer-links ">
-                <a href="index.html ">Home</a> |
-                <a href="work.html ">Work</a> |
-                <a href="about.html ">About</a> |
-                <a href="contact.html">Contact</a>
-            </p>
-
-            <p class="footer-company-name ">© 2023 Bridget Software Solutions </p>
+                    <div class="slide-snapper"></div>
+                    <a class="prev_slide" href="#slide_2"></a>
+                    <a class="next_slide" href="#slide_4"></a>
+                </li>
+                <li id="slide_4" class="li_slide">
+                    <div class="slide-snapper"></div>
+                    <a class="prev_slide" href="#slide_3"></a>
+                    <a class="next_slide" href="#slide_1"></a>
+                </li>
+            </ol>
         </div>
 
-        <div class="footer-center ">
-            <div>
-                <i class="fa fa-map-marker "></i>
-                <p><span>101 - Nihort Road,
+        <!-- Footer content would go here. -->
+
+        <footer class="footer-distributed ">
+
+            <div class="footer-left ">
+                <img src="https://i.ibb.co/K7ZpCFM/IMG-3272.png">
+                <h3>About<span>Bridget</span></h3>
+
+                <p class="footer-links ">
+                    <a href="index.html">Home</a> |
+                    <a href="work.html ">Work</a> |
+                    <a href="about.html">About</a> |
+                    <a href="contact.html">Contact</a>
+                </p>
+
+                <p class="footer-company-name ">© 2023 Bridget Software Solutions </p>
+            </div>
+
+            <div class="footer-center ">
+                <div>
+                    <i class="fa fa-map-marker "></i>
+                    <p><span>101 - Nihort Road,
                      Oba-otudeko avenue.</span> No. A - 1, olumide balogun close,</p>
-            </div>
+                </div>
 
-            <div>
-                <i class="fa fa-phone "></i>
-                <p>+234 091-37120296</p>
+                <div>
+                    <i class="fa fa-phone "></i>
+                    <p>+234 091-37120296</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope "></i>
+                    <p><a href="mailto:support@bridgetdesigns.com ">support@dev.com</a></p>
+                </div>
             </div>
-            <div>
-                <i class="fa fa-envelope "></i>
-                <p><a href="mailto:support@bridgetdesigns.com ">support@dev.com</a></p>
+            <div class="footer-right ">
+                <p class="footer-company-about ">
+                    <span>About Bridget</span>A dedicated software engineer, solving complex problems and delivering impactful results. Let's connect and collaborate on innovative projects!
+                </p>
+                <div class="footer-icons ">
+                    <a href="# "><i class="fa fa-facebook "></i></a>
+                    <a href="twitter.com/bridgetpro_  "><i class="fa fa-twitter "></i></a>
+                    <a href="instagram.com/bridgetpro_  "><i class="fa fa-instagram "></i></a>
+                    <a href="# "><i class="fa fa-linkedin "></i></a>
+                    <a href="# "><i class="fa fa-youtube "></i></a>
+                </div>
             </div>
-        </div>
-        <div class="footer-right ">
-            <p class="footer-company-about ">
-                <span>About Bridget</span>A dedicated software engineer, solving complex problems and delivering impactful results. Let's connect and collaborate on innovative projects!
-            </p>
-            <div class="footer-icons ">
-                <a href="# "><i class="fa fa-facebook "></i></a>
-                <a href="# "><i class="fa fa-twitter "></i></a>
-                <a href="# "><i class="fa fa-instagram "></i></a>
-                <a href="# "><i class="fa fa-linkedin "></i></a>
-                <a href="# "><i class="fa fa-youtube "></i></a>
-            </div>
-        </div>
-    </footer>
+        </footer>
+        <script>
+            index.js
+        </script>
 </body>
 
 </html>
