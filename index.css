@@ -232,14 +232,14 @@
     /* infinite slider */
     
     section#infinite {
-        background-color: #201c20;
-        padding: 100px 0px;
+        background-color: #ffffff;
+        padding: 10px 0px;
         text-align: center;
         color: #ffffff;
         font-size: 36px;
         position: relative;
         margin-bottom: 0px;
-        padding-bottom: 55px;
+        padding-bottom: 10px;
         display: flex;
         margin-top: 0px;
     }
