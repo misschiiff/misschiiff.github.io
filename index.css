@@ -89,7 +89,7 @@
             display: flex;
         }
         .nav ul li {
-            padding: 0 20px;
+            padding: 10 20px;
             font-size: 16px;
             color: #f5f5f5;
         }
@@ -242,6 +242,8 @@
         padding-bottom: 10px;
         display: flex;
         margin-top: 0px;
+        overflow: hidden;
+        align-items: center;
     }
     
     #infinite {
@@ -258,6 +260,7 @@
         margin-top: 0px;
         background: #E3E3E3;
         justify-content: center;
+        align-items: center;
     }
     
     .infinite .slider {
@@ -277,6 +280,25 @@
         width: calc(250px * 14);
         align-items: center;
     }
+    /* Style for the slide track */
+    
+    div.slide-track {
+        display: flex;
+        align-items: center;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+    /* Style for individual slides within the slide track */
+    
+    div.slide {
+        flex: 0 0 auto;
+        width: 250px;
+        /* Adjust the width as needed */
+        margin-right: 20px;
+        /* Adjust spacing between slides */
+        scroll-snap-align: start;
+    }
     
     #infinite .slide {
         flex: 0 0 auto;
@@ -285,26 +307,26 @@
         /* Adjust the margin as needed */
     }
     
-    #infinite .infinite-content {
+    section#infinite div.infinite-content {
         position: relative;
         z-index: 10;
         padding-top: 5px;
     }
     
-    #infinite h1 {
+    section#infinite h1 {
         margin-bottom: 0px;
         font-family: 'Prosto One', cursive;
         font-size: 10px;
     }
     
-    #infinite h4 {
+    section#infinite h4 {
         font-size: 8px;
         margin-top: 0;
         margin-bottom: 40px;
         color: #fdfdfd78;
     }
     
-    #infinite a {
+    section#infinite a {
         text-decoration: none;
         background: #373938;
         font-size: 15px;
@@ -314,13 +336,13 @@
     }
     
     @media screen and (max-width:900px) {
-        #sinfinite {
+        section#sinfinite {
             padding: 100px 30px;
         }
-        #infinite h1 {
+        section#infinite h1 {
             font-size: 10px;
         }
-        #infinite h4 {
+        section#infinite h4 {
             font-size: 8px;
         }
     }
@@ -343,7 +365,7 @@
     /* Define the animation speed variable */
     
     // Styling
-    .slider {
+    div.slider {
         background: white;
         box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
         height: 100px;
@@ -370,7 +392,7 @@
             left: 0;
             top: 0;
         }
-        .slide-track {
+        div.slide-track {
             animation: scroll $animationSpeed linear infinite;
             display: flex;
             width: calc(250px * 14);
@@ -378,7 +400,7 @@
             height: 100vh;
             justify-content: center;
         }
-        .slide {
+        div.slide {
             height: 100px;
             width: 250px;
         }
@@ -924,7 +946,7 @@
     }
     
     .footer-distributed h3 span {
-        color: #c317fe
+        color: #136AD2
     }
     /* Footer links */
     
@@ -985,7 +1007,7 @@
     }
     
     .footer-distributed .footer-center p a {
-        color: #c317fe;
+        color: #136AD2;
         text-decoration: none;
         ;
     }
