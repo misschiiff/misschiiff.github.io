@@ -950,6 +950,14 @@
     h2 {
         text-align: center;
     }
+    /* GitHub iframe */
+    
+    iframe {
+        border-radius: 10px;
+        /* Adjust the value as needed */
+        overflow: hidden;
+        /* This is important to ensure content stays within the curved edges */
+    }
     /* Footer-distributed */
     
     .footer-distributed {
