@@ -548,6 +548,36 @@
         border-radius: 50px;
     }
     
+    #cv .counts a {
+        text-decoration: none;
+        background: #c317fe;
+        font-size: 15px;
+        padding: 10px 15px;
+        /* Adjust padding as needed */
+        color: #fff;
+        border-radius: 8px;
+        width: 150px;
+        /* Fixed width for the button */
+        height: 40px;
+        /* Fixed height for the button */
+        display: inline-block;
+        white-space: nowrap;
+    }
+    
+    @media screen and (max-width: 768px) {
+        #cv .counts a {
+            width: 120px;
+            height: 30px;
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+        #cv .counts a {
+            width: 100px;
+            height: 25px;
+        }
+    }
+    
     @media screen and (max-width:900px) {
         #shero {
             padding: 100px 30px;
