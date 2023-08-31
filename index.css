@@ -442,7 +442,7 @@
         background-size: cover;
     }
     
-    #zero .shero-content {
+    #zero .zero-content {
         position: relative;
         z-index: 10;
     }
@@ -469,13 +469,13 @@
     }
     
     @media screen and (max-width:900px) {
-        #shero {
+        #zero {
             padding: 100px 30px;
         }
-        #shero h1 {
+        #zero h1 {
             font-size: 30px;
         }
-        #shero h4 {
+        #zero h4 {
             font-size: 20px;
         }
     }
