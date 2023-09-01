@@ -33,7 +33,7 @@ body {
 nav {
     padding: 20px 30px;
     background-color: #2e2e2e;
-    background-image: linear-gradient(to right, #29082f 0%, #302230 100%);
+    background-image: linear-gradient(90deg, #302230, #470247);
     color: #f5f5f5;
     display: flex;
     flex-direction: column;
@@ -130,7 +130,7 @@ div#navMenu.nav {
 
 #hero a {
     text-decoration: none;
-    background: #c317fe;
+    background: #ea43ea;
     font-size: 15px;
     padding: 10px 30px;
     color: #fff;
@@ -531,7 +531,7 @@ section#cv {
 
 section#cv div.counts a {
     text-decoration: none;
-    background: #c317fe;
+    background: #ea43ea;
     font-size: 12px;
     padding: 5px 15px;
     color: #fff;
@@ -568,7 +568,7 @@ section#cv div.counts a {
 
 #cv .counts a {
     text-decoration: none;
-    background: #c317fe;
+    background: #ea43ea;
     font-size: 15px;
     padding: 10px 15px;
     /* Adjust padding as needed */
@@ -710,7 +710,7 @@ div.home-content h2 {
     font-size: 20px;
     margin-top: 0;
     margin-bottom: 5px;
-    color: #F05283;
+    color: #ea43ea;
     font-size: 24px;
     /* Add or adjust the font size as needed */
     width: 100%;
@@ -1081,10 +1081,140 @@ grid-gap: 20px;
 }
 
 
+/* Styling for services index page */
+
+#form {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-top: 120px;
+}
+
+#form-h1 {
+    font-weight: 100;
+    color: #fff;
+}
+
+#email {
+    height: 30px;
+    width: 280px;
+    padding: 5px;
+    margin: 20px;
+    border: 1px solid #c0c0c0;
+    border-radius: 40px;
+}
+
+#submit {
+    background-color: #ea43ea;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    height: 40px;
+    width: 110px;
+    margin: 5px;
+    border: 0px solid;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+#submit:hover {
+    background-color: #302230;
+    box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.30);
+    transition: background-color 1s, box-shadow 1s;
+}
+
+.container {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding: 20px 20px;
+    position: relative;
+    background: linear-gradient(90deg, #302230, #470247);
+    font-family: "Open Sans", "Trebuchet MS", Helvetica, sans-serif
+}
+
+.grid-header {
+    color: #fff;
+}
+
+.grid-header>h1 {
+    font-weight: 100;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.grid-header>h1>span {
+    color: #4676fa;
+    font-weight: 100;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: scale(.7, .7)
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in-element {
+    animation: fade-in 1.4s;
+    width: 100%;
+    margin-top: 50px;
+    color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.hidden-grid {
+    width: 100%;
+    margin-top: 50px;
+    color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    opacity: 0;
+}
+
+.item-box {
+    width: 26%;
+    margin-bottom: 40px;
+    padding: 15px;
+    text-align: center;
+}
+
+.item-box:hover {
+    background-color: #ea43ea;
+    border: 0px solid;
+    border-radius: 4px;
+    box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.30);
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    border: 1px solid #6854FF;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.img-icon {
+    width: 40px;
+    height: 40px;
+}
+
+
 /* Footer-distributed */
 
 .footer-distributed {
-    background-color: #302230;
+    background-image: linear-gradient(90deg, #302230, #470247);
     box-sizing: border-box;
     width: 100%;
     text-align: left;
