@@ -1211,6 +1211,33 @@ grid-gap: 20px;
 }
 
 
+/* Styling for services index page */
+
+
+/* Existing CSS styles... */
+
+
+/* Add a media query for mobile screens */
+
+@media screen and (max-width: 768px) {
+    .hidden-grid {
+        flex-flow: column;
+    }
+    .item-box {
+        width: 100%;
+        /* Make each item take up the full width */
+    }
+    .item-box:hover {
+        /* Adjust hover styles for mobile */
+        background-color: #ea43ea;
+        border: 0px solid;
+        border-radius: 4px;
+        box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.30);
+        transition: background-color 0.5s, box-shadow 0.5s;
+    }
+}
+
+
 /* Footer-distributed */
 
 .footer-distributed {
