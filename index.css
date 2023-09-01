@@ -728,7 +728,7 @@ div.home-content h3 {
     /* Set a fixed width for the h2 element */
 }
 
-div.home-content a {
+button#generateCodeButton {
     text-decoration: none;
     background: #076de0;
     font-size: 15px;
@@ -736,6 +736,53 @@ div.home-content a {
     color: #fff;
     border-radius: 50px;
     margin-bottom: 50px;
+}
+
+
+/* Add styling for the notification box */
+
+
+/* Updated CSS for the notification box */
+
+.notification-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 9999;
+}
+
+.notification-box span {
+    font-size: 24px;
+    color: #333;
+}
+
+.notification-box button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4676fa;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.notification-box button:hover {
+    background-color: #303f9f;
+}
+
+.notification-box.fade-in {
+    opacity: 1;
 }
 
 div.home-content h3 span {

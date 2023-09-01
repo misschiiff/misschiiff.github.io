@@ -70,3 +70,50 @@ var animateHTML = function() {
     };
 };
 animateHTML().init();
+
+// Show the notification box with fade-in animation
+const notificationBox = document.getElementById('notificationBox');
+notificationBox.classList.add('fade-in');
+
+
+
+// Function to generate a unique code
+function generateUniqueCode() {
+    // Generate a random number or use any logic to create your unique code
+    const uniqueCode = Math.floor(Math.random() * 10000);
+
+    // Display the unique code in the notification box
+    const codeDisplay = document.getElementById('codeDisplay');
+    codeDisplay.textContent = `Generated Code: ${uniqueCode}`;
+
+    // Show the notification box
+    const notificationBox = document.getElementById('notificationBox');
+    notificationBox.style.display = 'block';
+
+    // Add click event listener to copy button
+    const copyButton = document.getElementById('copyButton');
+    copyButton.addEventListener('click', function() {
+        // Copy the code to the clipboard
+        const textArea = document.createElement('textarea');
+        textArea.value = uniqueCode;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+
+        // Provide feedback to the user
+        copyButton.textContent = 'Code Copied!';
+
+        // Fade out the notification box after a delay
+        setTimeout(function() {
+            notificationBox.style.opacity = '0';
+            setTimeout(function() {
+                notificationBox.style.display = 'none';
+            }, 500); // 500ms delay before hiding the box
+        }, 2000); // 2000ms (2 seconds) delay before fading out
+    });
+}
+
+// Attach a click event listener to the button
+const generateCodeButton = document.getElementById('generateCodeButton');
+generateCodeButton.addEventListener('click', generateUniqueCode);
