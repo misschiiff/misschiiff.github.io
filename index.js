@@ -151,7 +151,10 @@ document.getElementById('form').addEventListener('submit', function(event) {
             }
         })
         .catch(error => console.error('Error sending message:', error));
-}); // Create an AudioContext
+});
+
+
+// Create an AudioContext
 const audioContext = new(window.AudioContext || window.webkitAudioContext)();
 
 // Create an audio element
