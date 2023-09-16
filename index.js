@@ -151,4 +151,22 @@ document.getElementById('form').addEventListener('submit', function(event) {
             }
         })
         .catch(error => console.error('Error sending message:', error));
-});
+}); // Create an AudioContext
+const audioContext = new(window.AudioContext || window.webkitAudioContext)();
+
+// Create an audio element
+const audioElement = document.getElementById('myAudio');
+
+// Create a GainNode for volume control
+const volumeNode = audioContext.createGain();
+volumeNode.gain.value = 0.5; // Set volume to 50%
+
+// Connect the audio element to the GainNode
+const sourceNode = audioContext.createMediaElementSource(audioElement);
+sourceNode.connect(volumeNode);
+
+// Connect the GainNode to the destination (speakers)
+volumeNode.connect(audioContext.destination);
+
+// Play the audio
+audioElement.play();
