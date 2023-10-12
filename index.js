@@ -118,41 +118,6 @@ function generateUniqueCode() {
 const generateCodeButton = document.getElementById('generateCodeButton');
 generateCodeButton.addEventListener('click', generateUniqueCode);
 
-//  email Newsletter Feature
-
-document.getElementById('form').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    // Get the user's email
-    const email = document.querySelector('input[name="email"]').value;
-
-    // 'BOT_TOKEN' for Telegram bot's API token
-    const botToken = '6411861031:AAGQIl3iSo_eHcrsSu0hzOuJa0yJy2-ZtRg';
-
-    // Replace 'YOUR_CHAT_ID' with the chat ID of your Telegram channel or group
-    const chatId = 'MischifBot';
-
-    // Prepare the message
-    const message = `New subscriber: ${email}`;
-
-    // Create the Telegram Bot API URL
-    const apiUrl = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${message}`;
-
-    // Send the message to your Telegram bot
-    fetch(apiUrl, { method: 'POST' })
-        .then(response => response.json())
-        .then(data => {
-            if (data.ok) {
-                // Message sent successfully
-                console.log('Message sent.');
-            } else {
-                // Handle errors if the message wasn't sent
-                console.error('Failed to send message to Telegram bot:', data);
-            }
-        })
-        .catch(error => console.error('Error sending message:', error));
-});
-
 
 // Create an AudioContext
 const audioContext = new(window.AudioContext || window.webkitAudioContext)();

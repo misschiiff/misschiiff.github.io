@@ -40,13 +40,65 @@
 
 <body>
     <section id="home">
-        <form id="form" action="getbridget@hotmail.com">
-            <h1 id="form-h1">Proficient Solutions for Your<br>Website and Apps</h1>
-            <input type="email" name="email" id="email" placeholder="Enter your Email" required>
-            <input type="submit" id="submit" value="Get Started">
-        </form>
+
+
+
+        <div id="subscribePopup" class="popup">
+            <div class="popup-content">
+                <span id="closePopup" class="close-popup">&times;</span>
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get the latest updates and news delivered to your inbox.</p>
+                <form id="subscribeForm">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
 
     </section>
+
+
+    <script>
+        document.getElementById("subscribeForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const email = document.getElementById("emailInput").value;
+
+            // Define the URL where you want to post the email data
+            const postURL = "https://t.me/+mv9Q6J6CL04NGZk";
+
+            // Create a data object with the email
+            const data = {
+                email: email
+            };
+
+            // Display a "Submitting..." message while the request is in progress
+            document.getElementById("subscribeResponse").innerHTML = "Submitting...";
+
+            fetch(postURL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                })
+                .then(() => {
+                    // Handle the submission success
+                    document.getElementById("subscribeResponse").innerHTML = "Subscription successful!";
+                })
+                .catch(error => {
+                    // Handle any errors or failed requests
+                    document.getElementById("subscribeResponse").innerHTML = "Subscription failed. Please try again.";
+                    console.error('An error occurred:', error);
+                });
+        });
+    </script>
+
+
+
+
+
+
 </body>
 
 </html>
