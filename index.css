@@ -49,6 +49,7 @@ nav {
 
 div#navMenu.nav {
     color: #ea43ea;
+    justify-content: space-between;
 }
 
 .show {
@@ -60,16 +61,28 @@ div#navMenu.nav {
     list-style-type: none;
     padding: 0;
     margin-left: -20px;
-    margin-top: 13px;
+    margin-top: 20px;
     color: #242222;
+    justify-content: space-between;
 }
 
 .nav ul li a {
-    padding: 10px 20px;
+    padding: 20px 20px;
     font-size: 16px;
     text-transform: uppercase;
     color: #ea43ea;
     text-decoration: none;
+    justify-content: space-between;
+}
+
+.nav li {
+    padding: 20px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ea43ea;
+    text-decoration: none;
+    justify-content: space-between;
+    margin-inline: 2px;
 }
 
 @media screen and (min-width:600px) {
