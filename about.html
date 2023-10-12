@@ -61,6 +61,17 @@
         <div id="subscribeButton" class="subscribe-button">
             <img src="bell-solid.svg" alt="Subscribe ">
         </div>
+        <div id="subscribePopup" class="popup">
+            <div class="popup-content">
+                <span id="closePopup" class="close-popup">&times;</span>
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get the latest updates and news delivered to your inbox.</p>
+                <form id="subscribeForm">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
         <div id="navToggle" class="toggle-bars">
             <div class="bar"></div>
             <div class="bar"></div>
@@ -197,6 +208,7 @@
         </div>
     </footer>
     <script src="index.js"></script>
+    <script src="sub.js "></script>
     <script>
         // Disable right-click context menu
         document.addEventListener('contextmenu', function(e) {
