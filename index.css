@@ -1626,3 +1626,180 @@ grid-gap: 20px;
         margin-left: 0;
     }
 }
+
+.wrapper-outer {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.wrapper-inner {
+    width: 90%;
+    max-width: 90rem;
+    margin: auto;
+    padding: 2.4rem 0;
+    border-radius: 50px;
+}
+
+.menu-items,
+.site-actions,
+.article-meta {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.menu-items {
+    list-style: none;
+    text-transform: uppercase;
+    gap: 1.6rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.4rem;
+}
+
+article.main-article {
+    display: flex;
+    flex-direction: column;
+}
+
+.article_header {
+    order: 1;
+}
+
+.main-image {
+    order: 2;
+}
+
+.article-text {
+    order: 3;
+}
+
+.article-meta {
+    gap: 1.6rem;
+    padding: 1.6rem 0;
+    flex-wrap: no-wrap;
+}
+
+aside.related {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.related-articles {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.6rem;
+    margin-bottom: 50px;
+}
+
+.related-article {
+    display: flex;
+    flex-direction: column;
+    padding: 1.6rem;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.related-article:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.related-article img {
+    object-fit: cover;
+    max-height: 27rem;
+}
+
+.related-article h2,
+.related-article p {
+    padding: 0 1.6rem;
+}
+
+.related-article h2 {
+    margin-top: 1.6rem;
+}
+
+.article-container {
+    position: relative;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.related-article {
+    text-decoration: none;
+    /* Remove underlines */
+    color: #ea43ea;
+    justify-content: flex-start;
+    /* Set text color to green */
+}
+
+
+/* Adjust the selector to target the button element inside .related-article */
+
+.related-article button {
+    color: #ea43ea;
+    /* Set button text color to green */
+    background-color: white;
+    /* Set button background color to white */
+    border: 1px solid #ea43ea;
+    /* Add a border to the button */
+    padding: 5px 10px;
+    /* Adjust button padding */
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    box-shadow: 0px 0px 5px #000000;
+    /* Add a dark shadow to the button */
+}
+
+
+/* Add hover effect for the button */
+
+.related-article button:hover {
+    background-color: #ea43ea;
+    color: white;
+}
+
+.tag {
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    border: 0.1rem solid #f2f2f2;
+    padding: 0 0.8rem;
+}
+
+.avatar {
+    width: 3.6rem;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 60rem) {
+    article.main-article {
+        display: block;
+    }
+    .main-image {
+        display: block;
+        float: right;
+        margin-bottom: 2rem;
+        margin-left: 4rem;
+        width: 40%;
+        z-index: 20;
+    }
+    .article_header,
+    .article-text {
+        width: 80%;
+    }
+    .article-text {
+        margin-top: calc(2 * var(--padding-md));
+    }
+    .test {
+        display: sticky;
+        float: right;
+        right: 0;
+        top: 0;
+        //bottom: 10rem;
+    }
+}
