@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+
+
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <title>Minimal-portfolio-bridgetpro</title>
+
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- theme meta -->
+    <meta name="theme-name" content="thomson" />
+
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
+    <link rel="stylesheet" href="plugins/counto/animate.css">
+    <link rel="stylesheet" href="plugins/aos/aos.css">
+    <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="plugins/animated-text/animated-text.css">
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .profile-image {
+            position: absolute;
+            top: 20px;
+            right: 0;
+            margin: 60px;
+            border-radius: 100px;
+            /* Adjust the margin as needed */
+        }
+        
+        @media (min-width: 992px) {
+            .profile-image {
+                position: relative;
+                margin: 20px;
+                left: 60px;
+                right: 20px;
+                border-radius: 100px;
+                /* Remove the margin on desktop */
+            }
+        }
+        
+        .testimonial-content img {
+            border-radius: 100px;
+        }
+        
+        .testimonial-content img {
+            border-radius: 100px;
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .testimonial-content img {
+            border-radius: 100px;
+            display: block;
+            margin: 0 auto;
+            max-width: 60px;
+            /* Set the maximum width to 20px */
+            max-height: 60px;
+            /* Set the maximum height to 20px */
+            margin-bottom: 0;
+            /* Remove any margin from the bottom of the image */
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- Navigation Start -->
+    <!-- Header Start -->
+
+    <nav class="navbar navbar-expand-lg  main-nav " id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo-img.PNG" height='100px' width="100px" alt="" class="img-fluid">
+            </a>
+
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="ti-align-justify"></span>
+	  </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample09">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item  active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item  active">
+                        <a class="nav-link" href="blog-sidebar.html">Blog</a>
+                    </li>
+                    <li class="nav-item  active">
+                        <a class="nav-link" href="portfolio-3.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item  active"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Close -->
+
+
+    <!-- Display on mobile only -->
+    <img src="https://i.ibb.co/drDZwcr/instasave-1.jpg" alt="Profile Image" height='150px' width='150px' class="profile-image">
+
+    <!-- Navigation ENd -->
+
+    <!-- Banner Start -->
+    <section class="section banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10">
+                    <h2 class="cd-headline clip is-full-width mb-4 ">
+                        I provide <br>
+                        <span class="cd-words-wrapper text-color">
+                        <b class="is-visible">Software solutions. </b>
+                        <b>Design, Architecture &</b>
+                        <b>Development Services.</b>
+                    </span>
+                    </h2>
+                    <p>I must express the importance of a pleasing digital experience and how i can help your business,brand and or product <br> scale in the digital world
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner End -->
+
+    <!-- POrtfolio start -->
+    <section class="portfolio ">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-10">
+                    <div class="btn-group btn-group-toggle " data-toggle="buttons">
+                        <label class="btn active ">
+		            <input type="radio" name="shuffle-filter" value="all" checked="checked" />All Projects
+		          </label>
+                        <label class="btn">
+		            <input type="radio" name="shuffle-filter" value="design" />UI/UX Design
+		          </label>
+                        <label class="btn">
+		            <input type="radio" name="shuffle-filter" value="branding" />branding
+		          </label>
+                        <label class="btn">
+		            <input type="radio" name="shuffle-filter" value="illustration" />Web Development
+		          </label>
+                        <label class="btn">
+		            <input type="radio" name="shuffle-filter" value="photo" />Photography
+		          </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row shuffle-wrapper portfolio-gallery">
+                <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;design&quot;,&quot;illustration&quot;]">
+                    <div class="position-relative inner-box">
+                        <div class="image position-relative ">
+                            <img src="images/portfolio/Screenshot (122).png" alt="portfolio-image" class="img-fluid w-100 d-block">
+                            <div class="overlay-box">
+                                <div class="overlay-inner">
+                                    <a class="overlay-content" href="https://misschiiff.github.io/Web-demo/">
+                                        <h5 class="mb-0">Web App</h5>
+                                        <p>View Demo</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;branding&quot;]">
+                    <div class="position-relative inner-box">
+                        <div class="image position-relative ">
+                            <img src="images/portfolio/Screenshot (128).png" alt="portfolio-image" class="img-fluid w-100 d-block">
+                            <div class="overlay-box">
+                                <div class="overlay-inner">
+                                    <a class="overlay-content" href="https://misschiiff.github.io/web-demo2/">
+                                        <h5 class="mb-0">Web app</h5>
+                                        <p>View Demo</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;illustration&quot;]">
+                    <div class="position-relative inner-box">
+                        <div class="image position-relative ">
+                            <img src="images/portfolio/Screenshot (127).png" alt="portfolio-image" class="img-fluid w-100 d-block">
+                            <div class="overlay-box">
+                                <div class="overlay-inner">
+                                    <a class="overlay-content" href=" https://misschiiff.github.io/web-demo1/">
+                                        <h5 class="mb-0">Website </h5>
+                                        <p>view Demo</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;design&quot;,&quot;branding&quot;]">
+                    <div class="position-relative inner-box">
+                        <div class="image position-relative ">
+                            <img src="https://i.ibb.co/0qXgF68/IMG-1538.png" alt="portfolio-image" class="img-fluid w-100 d-block">
+                            <div class="overlay-box">
+                                <div class="overlay-inner">
+                                    <a class="overlay-content" href="portfolio-single2.html">
+                                        <h5 class="mb-0">App UI</h5>
+                                        <p>Design</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;illustration&quot;]">
+                    <div class="position-relative inner-box">
+                        <div class="image position-relative ">
+                            <img src="images/portfolio/Screenshot (123).png" alt="portfolio-image" class="img-fluid w-100 d-block">
+                            <div class="overlay-box">
+                                <div class="overlay-inner">
+                                    <a class="overlay-content" href="https://misschiiff.github.io/web-demo-0/">
+                                        <h5 class="mb-0 "> Web App</h5>
+                                        <p>View Demo</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;design&quot;,&quot;photo&quot;]">
+                    <div class="position-relative inner-box">
+                        <div class="image position-relative ">
+                            <img src="https://i.ibb.co/PZ9SjJS/IMG-1419.png" alt="portfolio-image" class="img-fluid w-100 d-block">
+                            <div class="overlay-box">
+                                <div class="overlay-inner">
+                                    <a class="overlay-content" href="portfolio-single3.html">
+                                        <h5 class="mb-0">Brand</h5>
+                                        <p>Design</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio End -->
+
+    <!-- Service start -->
+    <section class="section service-home border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="mb-2 ">Core Services.</h2>
+                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, totam ipsa quia hic odit a sit laboriosam voluptatem in, blanditiis.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="service-item mb-5" data-aos="fade-left">
+                        <i class="ti-layout"></i>
+                        <h4 class="my-3">Web Development</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, earum.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="service-item mb-5" data-aos="fade-left" data-aos-delay="450">
+                        <i class="ti-announcement"></i>
+                        <h4 class="my-3">Digital Marketing</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, earum.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="service-item mb-5 mb-lg-0" data-aos="fade-left" data-aos-delay="750">
+                        <i class="ti-layers"></i>
+                        <h4 class="my-3">App Development</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, earum.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="service-item" data-aos="fade-left" data-aos-delay="750">
+                        <i class="ti-anchor"></i>
+                        <h4 class="my-3">Branding Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, earum.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="service-item mb-5" data-aos="fade-left" data-aos-delay="950">
+                        <i class="ti-video-camera"></i>
+                        <h4 class="my-3">Video Marketing</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, earum.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="service-item mb-5 mb-lg-0" data-aos="fade-left" data-aos-delay="1050">
+                        <i class="ti-android"></i>
+                        <h4 class="my-3">App Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, earum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- service end -->
+
+
+    <!-- Testimonial Start -->
+    <section class="section testimonial">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center mb-5">
+                    <h2 class="mb-2">Reviews.</h2>
+                </div>
+            </div>
+
+
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-8">
+                    <div class="owl-carousel owl-theme">
+                        <div class="testimonial-content">
+                            <img src="https://i.ibb.co/R6V1y1W/user.png" height='50px' width='50px' alt="Quote Image">
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi dolores assumenda explicabo eos et neque dolorem aliquam dolor nobis facere consequuntur eius impedit enim, doloribus necessitatibus at sint nesciunt perspiciatis!</p>
+
+                            <h4 class="mb-0 ">Segun awoniyi</h4>
+                            <span>Ceo Finrik Technologies</span>
+                        </div>
+                        <div class="testimonial-content ">
+                            <img src="https://i.ibb.co/R6V1y1W/user.png" height='50px' width='50px' alt="Quote Image">
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi dolores assumenda explicabo eos et neque dolorem aliquam dolor nobis facere consequuntur eius impedit enim, doloribus necessitatibus at sint nesciunt perspiciatis!</p>
+
+                            <h4 class="mb-0 ">Tolulope Ajila</h4>
+                            <span>Senior Designer-Designtech.inc</span>
+                        </div>
+                        <div class="testimonial-content ">
+                            <img src="https://i.ibb.co/R6V1y1W/user.png" height='50px' width='50px' alt="Quote Image">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi dolores assumenda explicabo eos et neque dolorem aliquam dolor nobis facere consequuntur eius impedit enim, doloribus necessitatibus at sint nesciunt perspiciatis!</p>
+
+                            <h4 class="mb-0 ">Timothy Adeneye</h4>
+                            <span>Chief Editor, Pr - Bloom9ja</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial End -->
+    <!-- Footer start -->
+    <section class="footer ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-6 ">
+                    <p class="mb-0 ">Copyrights © 2023. Designed & Developed by
+                        <a href="themefisher.com " class="text-white ">10sqware</a>
+                    </p>
+                </div>
+                <div class="col-lg-6 ">
+                    <div class="widget footer-widget text-lg-right mt-5 mt-lg-0 ">
+                        <ul class="list-inline mb-0 ">
+                            <li class="list-inline-item "><a href="https://www.facebook.com/themefisher " target="_blank "><i class="ti-facebook mr-3 "></i></a>
+                            </li>
+                            <li class="list-inline-item "><a href="https://twitter.com/themefisher " target="_blank "><i class="ti-twitter mr-3 "></i></a>
+                            </li>
+                            <li class="list-inline-item "><a href="https://github.com/themefisher/ " target="_blank "><i class="ti-github mr-3 "></i></a></li>
+                            <li class="list-inline-item "><a href="https://www.pinterest.com/themefisher/ " target="_blank "><i class="ti-pinterest mr-3 "></i></a></li>
+                            <li class="list-inline-item "><a href="https://dribbble.com/themefisher/ " target="_blank "><i class="ti-dribbble mr-3 "></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer End -->
+
+    <!-- jQuery -->
+    <script src="plugins/jQuery/jquery.min.js "></script>
+    <!-- Bootstrap JS -->
+    <script src="plugins/bootstrap/bootstrap.min.js "></script>
+    <script src="plugins/aos/aos.js "></script>
+    <script src="plugins/owl-carousel/owl.carousel.min.js "></script>
+    <script src="plugins/shuffle/shuffle.min.js "></script>
+    <script src="plugins/magnific-popup/jquery.magnific-popup.min.js "></script>
+    <script src="plugins/animated-text/animated-text.js "></script>
+    <script src="plugins/counto/apear.js "></script>
+    <script src="plugins/counto/counTo.js "></script>
+
+    <!-- Google Map -->
+    <script src="plugins/google-map/map.js "></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap "></script>
+    <!-- Main Script -->
+    <script src="js/script.js "></script>
+
+</html>
