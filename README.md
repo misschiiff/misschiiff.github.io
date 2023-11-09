@@ -1,14 +1,10 @@
 
 
-<!-- download -->
-## Download And installation
-
-Download this template from [Github](https://github.com/themefisher/thomson/archive/main.zip)
 
 <!-- installation -->
 ### Basic Usages
 
-After downloading the template, you can simply edit the HTML and CSS files from the `theme` folder. To preview the changes you make to the code, you can open the index.html file in your web browser.
+You can download this code and simply edit the HTML and CSS files. To preview the changes you make to the code, you can open the index.html file in your web browser.
 
 ### Advanced Usage
 
@@ -17,17 +13,11 @@ For advanced usage, you have some prerequisites to install. Then you can run it 
 #### Install prerequisites (once for a machine)
 
 * **Node Installation:** [Install node js](https://nodejs.org/en/download/)
-* **Gulp Installation:** Install gulp globally from your terminal
 
-```
-npm install --global gulp-cli
-```
-
-Or visit the original [Gulp docs](https://gulpjs.com/docs/en/getting-started/quick-start)
 
 #### Local setup
 
-After successfully installing those dependencies, open this theme with any IDE [[VS Code](https://code.visualstudio.com/) recommended], and then open the internal terminal of IDM [vs code shortcut <code>ctrl/cmd+\`</code>]
+After successfully installing those dependencies, open this code with any IDE [[VS Code](https://code.visualstudio.com/) recommended], and then open the internal terminal of IDM [vs code shortcut <code>ctrl/cmd+\`</code>]
 
 * Install dependencies
 
@@ -53,23 +43,22 @@ npm run build
 
 Now you get a `theme` folder that has all the changes you have made. you can use this folder as your main theme.
 
-👉🏻 [visit documentation](https://docs.themefisher.com/thomson/)
+👉🏻 [visit documentation]
 
 <!-- reporting issue -->
 ## Reporting Issues
 
-We use GitHub Issues as the official bug tracker for the thomson Template. Please Search [existing issues](https://github.com/themefisher/thomson/issues). It’s possible someone has already reported the same problem.
-If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/themefisher/thomson/issues).
+We use GitHub Issues as the official bug tracker 
 
 <!-- support -->
 ## Technical Support or Questions (Paid)
 
-If you have questions or need help integrating the product please [contact us](mailto:mehedi@themefisher.com) instead of opening an issue.
+If you have questions or need help integrating the product please [contact us](mailto:hello.bridgetizba@gmail.com) instead of opening an issue.
 
 <!-- licence -->
 ## License
 
-Copyright (c) 2016 - Present, Designed & Developed by [Themefisher](https://themefisher.com)
+Copyright (c) 2016 - Present, Designed & Developed by [Bridget Pro for @10sqware](https://misschiiff.github.io)
 
 **Code License:** Released under the [MIT](https://github.com/themefisher/thomson/blob/main/LICENSE) license.
 
