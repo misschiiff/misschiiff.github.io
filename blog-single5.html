@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-
-
-
-<html en="lang">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
+
 
     <!-- mobile responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -69,6 +67,7 @@
 
         gtag('config', 'G-4DGXMB0QRL');
     </script>
+
 </head>
 
 <body>
@@ -80,6 +79,7 @@
             <a class="navbar-brand" href="index.html">
                 <img src="images/logo-img.PNG" height='100px' width="100px" alt="" class="img-fluid">
             </a>
+
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="ti-align-justify"></span>
 	  </button>
@@ -108,7 +108,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-center">
-                        <h1 class="text-capitalize mb-0 text-lg">Blog Feed</h1>
+                        <h1 class="text-capitalize mb-0 text-lg">Blog Post</h1>
                     </div>
                 </div>
             </div>
@@ -119,87 +119,128 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="post mb-5">
-                                <a class="image-content" href="blog-single.html">
-                                    <img src="images/blog/blogimg.webp" alt="" class="img-fluid">
-                                </a>
+                    <article class="single-post">
+                        <img src="images/blog-jsx-blade.webp" alt="" class="img-fluid">
 
-                                <div class="post-content">
-                                    <span class="date text-uppercase text-sm">10 june 2022</span>
-                                    <a href="blog-single.html">
-                                        <h4>Are you living a life aligned with your purpose? Have you ever stopped to ponder the deeper meaning behind your actions and choices?</h4>
-                                    </a>
-                                </div>
+                        <div class="single-post-content mt-4">
+                            <div class="post-meta mb-4">
+                                <span class="text-black">Tags :</span>
+                                <span>Design,</span>
+                                <span>Development</span>
+
+                                <span class="ml-3">-</span>
+                                <span class="date">20 November 2023</span>
+                            </div>
+
+                            <h3>Laravel Blade vs React JSx </h3>
+
+                            <p>Continuous development is at the core of every developer and programmers journey. Learning new technology , programming languages, frames works. etc is not out of the norm for us.
+                            </p>
+
+                            <p>In a bid to self develop and learn new technologies I decided to embark on a 30 days journey to build a blog project using Php and the laravel framework.
+                            </p>
+
+
+                            <p>It didn’t take long before I noticed some similarities between React and Laravel Laravel uses a templating engine called blade to build dynamic user interface, while React uses Jsx. Let me break it down in details: Laravel
+                                Blade (a templating engine for the Laravel PHP framework) and React JSX (JavaScript XML syntax used with React) have some similarities, but they also serve different purposes in the context of web development. Here are
+                                some similarities between Laravel Blade and React JSX:</p>
+
+
+                            <h5>1. Templating Language:</h5>
+                            <p>Both Laravel Blade and React JSX are used as templating languages to build the user interface of web applications.</p>
+
+
+                            <h5>2. Mixing Code and Markup:</h5>
+                            <p>Both Blade and JSX allow developers to mix code and markup seamlessly. In Blade, you can use `@` directives to include PHP logic within HTML, while in JSX, you can embed JavaScript expressions within XML-like syntax.</p>
+
+
+                            <h5>3. Component-Based Approach:</h5>
+                            <p>Both technologies follow a component-based architecture. In Laravel, Blade views can be seen as components, and in React, JSX components are used to structure the UI.</p>
+
+
+                            <h5>4. Conditional Rendering:</h5>
+                            <p>Blade and JSX provide constructs for conditional rendering, allowing developers to show or hide content based on certain conditions.</p>
+
+
+                            <h5>5. Looping/Iteration:</h5>
+                            <p>Both technologies support looping or iteration through data. Blade uses `@foreach`, `@for`, etc., and JSX can use JavaScript’s map function or other constructs for iteration.</p>
+
+
+                            <h5>6. Variables and Data Binding:</h5>
+                            <p>Both Blade and JSX facilitate the binding of data to the UI. In Blade, you can output variables using `{{ $variable }}`, and in JSX, you can embed JavaScript expressions within curly braces `{}` to output dynamic content.</p>
+
+                            <p>Despite these similarities, it’s important to note that Laravel Blade and React JSX operate in different environments (server-side vs. client-side) and have different purposes within their respective ecosystems. Laravel Blade
+                                is primarily used on the server side to generate HTML, while React JSX is used on the client side for building interactive user interfaces.</p>
+
+                            <div class="share mt-4">
+                                <ul class="list-inline">
+                                    <li class="mb-3">Share Now :</li>
+                                    <li class="list-inline-item"><a href="#"><i class="ti-facebook mr-2"></i> Facebook</a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="ti-twitter mr-2"></i> Twitter</a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="ti-linkedin mr-2"></i> Linkedin</a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="ti-pinterest mr-2"></i> Pinterest</a></li>
+                                </ul>
                             </div>
                         </div>
+                    </article>
 
-                        <div class="col-lg-6 col-md-6">
-                            <div class="post mb-5">
-                                <a class="image-content" href="blog-single.html">
-                                    <img src="images/blog/blogimg0.webp" alt="" class="img-fluid">
-                                </a>
+                    <div class="comments bg-secondary p-4 mt-5">
+                        <h4 class="mb-4">Comments</h4>
 
-                                <div class="post-content">
-                                    <span class="date text-uppercase text-sm">17 june 2019</span>
+                        <div class="latest-comments">
+                            <ul class="list-unstyled">
+                                <li>
 
-                                    <a href="blog-single1.html">
-                                        <h4>Electromagnetic Radiation and How It Affects Your Health and Causes Brain Fog</h4>
-                                    </a>
-                                </div>
-                            </div>
+                                    <div class="media comments-box mb-45">
+                                        <img src="images/blog/author1.jpg" alt="" class="img-fluid mr-3">
+                                        <div class="comments-text media-body">
+                                            <h5>John Doe</h5>
+                                            <p>Maecenas fermentum consequat mi Donec fermentum Pelle maleuada nulla amiuis sapien sem aliquet nec commodo eget consequat </p>
+                                            <a href="#" class="text-sm text-muted">Reply</a>
+
+                                            <div class="media mt-4">
+                                                <img src="images/blog/author2.jpg" alt="" class="img-fluid mr-3">
+                                                <div class="media-body comments-text">
+                                                    <div class="avatar-name">
+                                                        <h5>Jennifer S. Bowen</h5>
+                                                    </div>
+                                                    <p>Maecenas fermentum consequat mi Donec fermentum Pelle maleuada nulla amiuis sapien sem aliquet nec commodo eget </p>
+                                                    <a href="#" class="text-sm text-muted">Reply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="media">
+                                        <img src="images/blog/author1.jpg" alt="" class="img-fluid mr-3">
+                                        <div class="media-body comments-text">
+                                            <h5>Omar Elnagar</h5>
+                                            <p>Maecenas fermentum consequat mi Donec fermentum Pelle maleuada nulla amiuis sapien sem aliquet nec commodo eget consequat </p>
+                                            <a href="#" class="text-sm text-muted">Reply</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
+                    </div>
 
-                        <div class="col-lg-6 col-md-6">
-                            <div class="post mb-5">
-                                <a class="image-content" href="blog-single2.html">
-                                    <img src="images/blog/blogimg1.webp" alt="" class="img-fluid">
-                                </a>
-
-                                <div class="post-content">
-                                    <span class="date text-uppercase text-sm">17 june 2019</span>
-
-                                    <a href="blog-single2.html">
-                                        <h4>Hold onto your holy water, because we’re about to dive into a wild conspiracy theory.</h4>
-                                    </a>
-
-                                </div>
+                    <div class="comment-form bg-secondary p-4 mt-5">
+                        <h4 class="mb-4">Leave a comment</h4>
+                        <form action="#" class="comment-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your name">
                             </div>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6">
-                            <div class="post mb-5 mb-lg-0">
-                                <a class="image-content" href="blog-single3.html">
-                                    <img src="images/blog/blogimg2.webp" alt="" class="img-fluid">
-                                </a>
-
-                                <div class="post-content">
-                                    <span class="date text-uppercase text-sm">18 May 2020</span>
-
-                                    <a href="blog-single3.html">
-                                        <h4>If you’re on the hunt for the ultimate personal computer or desktop .</h4>
-                                    </a>
-
-                                </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Email">
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="post mb-5 mb-lg-0">
-                                <a class="image-content" href="blog-single5.html">
-                                    <img src="images/blog-jsx-blade.webp" alt="" class="img-fluid">
-                                </a>
-
-                                <div class="post-content">
-                                    <span class="date text-uppercase text-sm">20 November 2023</span>
-
-                                    <a href="blog-single5.html">
-                                        <h4>Laravel Blade vs React JSx</h4>
-                                    </a>
-
-                                </div>
+                            <div class="form-group">
+                                <textarea name="msg" id="msg" cols="30" rows="4" class="form-control" placeholder="Your Comment"></textarea>
                             </div>
-                        </div>
+
+                            <a href="#" class="btn btn-main">Post Comment</a>
+
+                        </form>
                     </div>
                 </div>
 
@@ -234,7 +275,7 @@
                                     <div class="post-body">
                                         <span class="text-capitalize">by bridget pro</span>
                                         <a href="#">
-                                            <h5>How to ship to any part of west africa safely</h5>
+                                            <h5>Getting started with the web, using Html & Css</h5>
                                         </a>
                                     </div>
                                 </li>
@@ -286,36 +327,6 @@
                     </div>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="pagination">
-                        <ul class="list-inline d-block mx-auto">
-                            <li class="list-inline-item">
-                                <a href="#">Prev</a>
-                            </li>
-                            <li class="active list-inline-item">
-                                <a href="#">
-                                    <span>1</span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#">
-                                    <span>2</span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#">
-                                    <span>3</span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#">Next</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -328,9 +339,9 @@
                 <div class="col-lg-6">
                     <div class="widget footer-widget text-lg-right mt-5 mt-lg-0">
                         <ul class="list-inline mb-0">
-                            <li class="list-inline-item"><a href="https://www.facebook.com/66dxns/" target="_blank"><i class="ti-facebook mr-3"></i></a>
+                            <li class="list-inline-item"><a href="https://www.facebook.com/66dxns" target="_blank"><i class="ti-facebook mr-3"></i></a>
                             </li>
-                            <li class="list-inline-item"><a href="https://twitter.com/bridgetpro_/" target="_blank"><i class="ti-twitter mr-3"></i></a>
+                            <li class="list-inline-item"><a href="https://twitter.com/bridgetpro_" target="_blank"><i class="ti-twitter mr-3"></i></a>
                             </li>
                             <li class="list-inline-item"><a href="https://github.com/misschiiff/" target="_blank"><i class="ti-github mr-3"></i></a></li>
                             <li class="list-inline-item"><a href="https://www.pinterest.com/bridgetpro/" target="_blank"><i class="ti-pinterest mr-3"></i></a></li>
